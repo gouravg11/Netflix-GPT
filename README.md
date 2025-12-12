@@ -5,6 +5,8 @@
     - Used Create React App
     - Initial Setup
     - Tailwind Setup
+    - Header
+    - Login Form
 
 # Features
 
