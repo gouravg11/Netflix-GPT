@@ -1,6 +1,11 @@
+import { useState } from "react";
 import Header from "./Header";
 
 const Login = () => {
+  const [isSignIn, setIsSignIn] = useState(true);
+  const toggleSignIn = () => {
+    setIsSignIn(!isSignIn);
+  };
   return (
     <div>
       <Header />
@@ -11,7 +16,17 @@ const Login = () => {
         />
       </div>
       <form className="w-3/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-60">
-        <h1 className="font-bold text-3xl py-4">Sign In</h1>
+        <h1 className="font-bold text-3xl py-4">
+          {" "}
+          {isSignIn ? "Sign In" : "Sign Up"}
+        </h1>
+        {!isSignIn && (
+          <input
+            type="text"
+            placeholder="Full Name"
+            className="p-3 my-2 w-full bg-gray-700"
+          />
+        )}
         <input
           type="text"
           placeholder="Email Address"
@@ -23,8 +38,13 @@ const Login = () => {
           className="p-3 my-2 w-full bg-gray-700"
         />
         <button className="p-4 my-6 bg-red-700 w-full rounded-lg">
-          Sign In
+          {isSignIn ? "Sign In" : "Sign Up"}
         </button>
+        <p className="py-4 cursor-pointer" onClick={toggleSignIn}>
+          {isSignIn
+            ? "New to Netflix-GPT? Sign Up Now"
+            : "Already Registered...? Sign In Now"}
+        </p>
       </form>
     </div>
   );

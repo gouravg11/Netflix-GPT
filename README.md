@@ -6,7 +6,8 @@
     - Initial Setup
     - Tailwind Setup
     - Header
-    - Login Form
+    - Login Form (Sign In)
+    - Sign Up
 
 # Features
 
