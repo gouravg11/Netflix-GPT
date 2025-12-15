@@ -8,6 +8,8 @@
     - Header
     - Login Form (Sign In)
     - Sign Up
+    - Form Validation
+    - useRef
 
 # Features
 
