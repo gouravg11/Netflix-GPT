@@ -9,7 +9,12 @@
     - Login Form (Sign In)
     - Sign Up
     - Form Validation
-    - useRef
+    - useRef Hook
+    - Firebase Setup
+    - Deploy is also done
+    - Created a sign up user account
+    - Done with the sign in as well
+    - Created app store with userSlice
 
 # Features
 
