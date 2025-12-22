@@ -1,10 +1,15 @@
+import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 import Header from "./Header";
+import MainComponent from "./MainComponent";
+import SecondaryComponent from "./SecondaryComponent";
 
 const Browse = () => {
+  useNowPlayingMovies();
   return (
     <>
       <Header />
-      <h1>Browse</h1>
+      <MainComponent />
+      <SecondaryComponent />
     </>
   );
 };

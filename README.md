@@ -15,6 +15,12 @@
     - Created a sign up user account
     - Done with the sign in as well
     - Created app store with userSlice
+    - Implemented sign out in header
+    - update the profile
+    - used the navigate only inside the onAuthChange (removed from onSingIn and onSignOut)
+    - we have unsubscribed to the onAuthChange... why that i have to check...
+    - Just updated constant file.
+    - Fetch the data for movies from TMDB
 
 # Features
 
